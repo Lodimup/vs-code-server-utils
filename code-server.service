@@ -1,0 +1,10 @@
+[Unit]
+After=network.target
+
+[Service]
+User=ubuntu
+Group=ubuntu
+ExecStart=/usr/local/bin/codeboot.sh
+
+[Install]
+WantedBy=default.target
